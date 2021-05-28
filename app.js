@@ -6,30 +6,39 @@ const u_score = document.querySelector('#u_score');
 const c_score = document.querySelector('#c_score');
 const selected = document.querySelector('.selection');
 const selected2 = document.querySelector('.selection2');
+const choice = document.querySelector('.choice');
+const appraise = ["Nice! Keep Going", "Wow", "Awesome", "Good", "I am impressed"];
+const condemn = ["Haha Sucker", "Come with a better luck next time", "Loser", "I think you should give up", "How can you have such bad luck?"]
+
 const a = document.querySelector('#a');
 const b = document.querySelector('#b');
 const c = document.querySelector('#c');
-let user=1, comp=1;
+let user=0, comp=0;
 let comp_choice,user_choice;
 const rps = [rock, paper, scissor];
 console.log(rps[0]);
 
 function score_board(s, user_choice)
 {
+    let n = Math.floor(Math.random()*5);
     if(s==0){
         rps[user_choice-1].classList.add('silver-glow');
         setTimeout(function(){
             rps[user_choice-1].classList.remove('silver-glow');
         }, 500);
+        choice.innerHTML= "Its a tie.";
         return;
     }
     else if(s==-1){
+        console.log(comp);
         comp++;
         c_score.innerHTML=comp;
         rps[user_choice-1].classList.add('red-glow');
         setTimeout(function(){
             rps[user_choice-1].classList.remove('red-glow');
         }, 500);
+        choice.innerHTML= condemn[n];
+        return;
     }
     else{
         user++;
@@ -38,6 +47,8 @@ function score_board(s, user_choice)
         setTimeout(function(){
             rps[user_choice-1].classList.remove('green-glow');
         }, 500);
+        choice.innerHTML= appraise[n];
+        return;
     }
 }
 
@@ -45,7 +56,6 @@ function score_board(s, user_choice)
 function Comp_Choice(){
     let n = Math.random();
     n = Math.floor(n*3) + 1;
-    console.log(n);
     return n;
 }
 
@@ -92,8 +102,6 @@ function colorx(ch){
     }
 }
 
-// const choice = document.querySelector('.choice');
-// choice.innerHTML= "Rock destroys scissor";
 
 rock.addEventListener('click', function(){
     selected.innerHTML='Rock';
