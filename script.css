@@ -4,6 +4,7 @@
     background-color: rgb(43, 42, 42);
 }
 .tite{
+
     font-family: monospace;
     text-align: center;
     /* font-weight: 1600; */
@@ -13,14 +14,17 @@
 }
 #a{
     background-color: whitesmoke;
+    display: inline-block;
 }
 #b{
     background-color: whitesmoke;
+    display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
 }
 #c{
     background-color: rgb(245, 245, 245);
+    display: inline-block;
 }
 #a:hover{
     color:rgb(239,84,128);
@@ -83,13 +87,13 @@
     padding: 0; 
     height: 100px;
     width: 100px;
-    border: 5px solid white;
-    opacity: 0.8;
+    border: 3px solid white;
+    opacity: 1;
     border-radius: 50%;
     transition: .5s ease;
 }
 .rock:hover{
-    opacity: 1;
+    opacity: 0.9;
 }
 /* .midr{
     color: rgb(161, 65, 65);
@@ -111,41 +115,80 @@
     width: 100px;
     margin-left: 30px;
     margin-right: 30px;
-    border: 5px solid white;
+    border: 3px solid white;
     border-radius: 50%;
     transition: .5s ease;
-    opacity: 0.8;
+    opacity: 1;
 }
 .paper:hover{
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .scissor{
     padding: 0; 
     height: 100px;
     width: 100px;
-    border: 5px solid white;
     border-radius: 50%;
+    border: 3px solid white;
     transition: .5s ease;
-    opacity: 0.8;
-}
-.scissor:hover{
     opacity: 1;
 }
+.scissor:hover{
+    opacity: 0.8;
+}
+/* .scissor:not(:hover){
+
+    opacity: 1;
+} */
 
 .selection{
     font-family: monospace;
     text-align: center;
     font-weight: 800;
-    font-size: .75cm;
+    font-size: .5cm;
     color: whitesmoke;
+    margin-bottom: 10px;
 }
 
 .uc{
     font-family: monospace;
     text-align: center;
     font-weight: 800;
-    font-size: .75cm;
+    font-size: .5cm;
     color: whitesmoke;
     margin-top: 20px;
+}
+
+
+.selection2{
+    font-family: monospace;
+    text-align: center;
+    font-weight: 800;
+    font-size: .5cm;
+    color: whitesmoke;
+}
+
+.cc{
+    font-family: monospace;
+    text-align: center;
+    font-weight: 800;
+    font-size: .5cm;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+
+.green-glow{
+    border-color: rgb(145, 212, 44);
+    box-shadow: 0 0 10px greenyellow;
+}
+
+.red-glow{
+    border-color: rgb(255, 87, 87);
+    box-shadow: 0 0 10px red;
+}
+
+.silver-glow{
+    border-color: silver;
+    box-shadow: 0 0 10px rgb(231, 225, 225);
 }
