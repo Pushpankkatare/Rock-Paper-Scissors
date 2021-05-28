@@ -7,32 +7,61 @@
     font-family: monospace;
     text-align: center;
     /* font-weight: 1600; */
-    font-size: 1cm;
+    font-size: 1.5cm;
     background-color: whitesmoke;
     color: rgb(43, 42, 42);
 }
-
+#a{
+    background-color: whitesmoke;
+}
+#b{
+    background-color: whitesmoke;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#c{
+    background-color: whitesmoke;
+}
+#a:hover{
+    color:rgb(239,84,128);
+    background-color: whitesmoke;
+}
+#b:hover{
+    color:rgb(255,222,85);
+    background-color: whitesmoke;
+}#c:hover{
+    color:rgb(116,218,226);
+    background-color: whitesmoke;
+}
 
 .score-board{
-    padding: 10px;
+     margin: 20px auto 20px auto;
+    width:200px;
+    padding: 10px 40px 10px 40px; 
     color: whitesmoke;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border: 3px solid white;
+    border-radius: 4px;
+    position:relative;
 }
 
 .user{
-    background-color: rgb(233, 106, 48);
-}
-.comp{
+    position:absolute;
+    left:-22;
+    top:22;
     background-color: rgb(233, 106, 48);
 
 }
+.comp{
+    position:absolute;
+    right:-24;
+    top:22;
+    background-color: rgb(233, 106, 48);
+}
 .score{
     font-size: 1cm;
-    border: 3px solid whitesmoke;
-    padding: 10px 40px 10px 40px; 
+    /* border: 3px solid whitesmoke; */
+    /* padding: 10px 40px 10px 40px;  */
 }
 
 .choice{
@@ -98,4 +127,13 @@
 }
 .scissor:hover{
     opacity: 0.2;
+}
+
+.selection{
+    font-family: monospace;
+    text-align: center;
+    font-weight: 800;
+    font-size: .75cm;
+    color: whitesmoke;
+    margin: 20px;
 }
