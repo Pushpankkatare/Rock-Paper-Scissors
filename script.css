@@ -86,6 +86,9 @@
     border-radius: 50%;
     transition: .5s ease;
 }
+.rock:hover{
+    opacity: 0.2;
+}
 /* .midr{
     color: rgb(161, 65, 65);
     transition: .5s ease;
@@ -95,9 +98,6 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 } */
-.rock:hover{
-    opacity: 0.2;
-}
 /* .r:hover .midr{
     opacity: 1;
 } */
