@@ -7,7 +7,7 @@ const c_score = document.querySelector('#c_score');
 const selected = document.querySelector('.selection');
 const selected2 = document.querySelector('.selection2');
 const choice = document.querySelector('.choice');
-const appraise = ["Nice! Keep Going.", "Wow!", "Awesome.", "Good.", "I am impressed"];
+const appraise = ["Nice! Keep Going.", "Wow!", "Awesome!", "Good.", "I am impressed"];
 const condemn = ["Haha Sucker", "Come with a better luck next time", "Loser", "I think you should give up", "How can you have such bad luck?"]
 
 const a = document.querySelector('#a');
